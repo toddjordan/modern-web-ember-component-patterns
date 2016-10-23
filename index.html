@@ -26,33 +26,89 @@
       <div class="slides">
 	<section>
           <h2>Ember Component Patterns</h2>
+          <p>Todd Jordan</p>
+          <p>@tddjordan</p>
         </section>
 	<section>
-          <h2>About Me</h2>
+          <h2>A Little About Me</h2>
+          <div style="text-align:left;margin-left:100px;">
+            <div class="fragment fade-right">
+              <img style="display:inline;position:relative;top:40px;" alt="Triangle Ember Meetup Tomster" height="100" src="http://emberjs.com/images/tomsters/raleigh.png"/>
+              <p style="display:inline;">Triangle Ember Meetup Organizer</p>
+            </div>
+            <div class="fragment fade-right">
+              <img style="display:inline;position:relative;top:40px;" alt="Ember Learn Team Tomster" height="100" src="http://emberjs.com/images/tomsters/teaching.png"/>
+              <p style="display:inline;">Ember Learn Team</p>
+            </div>
+            <div class="fragment fade-right">
+              <img style="display:inline;position:relative;top:40px;" alt="LTS Tomster" height="100" src="http://emberjs.com/images/tomsters/lts.png"/>
+              <p style="display:inline;">Senior Dev at Interactive Intelligence</p>
+            </div>
+          </div>
+        </section>
+	<section>
+          <h2>A Little About Ember</h2>
+          <p class="fragment">Commitment to Semver, "Stability without Stagnation"</p>
+          <p class="fragment">Convention over Configuration</p>
+          <p class="fragment">Pre-Built Local Environment and Build Pipeline (node, tests, linting, es6)</p>
+          <p class="fragment">Community Owned and Maintained</p>
+        </section>
+	<section>
+          <h2>A Little About This Talk</h2>
+          <p class="fragment fade-in">Components are Everywhere</p>
+          <p class="fragment fade-in">Basic Component Mechanics of Ember</p>
+          <p class="fragment fade-in">Ideas for Designs</p>
+        </section>
+        <section>
+          <h2>Basics of an Ember Component</h2>
+          <img src="media/component-basics.png" height="300px"/>
         </section>
         <section data-background="http://i.giphy.com/vYqeVRZVpzN0A.gif">
           <h2>Functional Components and DDAU</h2>
           <p>Ember's sweetspot</p>
         </section>
         <section>
-          <h2>Demo</h2>
-          <iframe width="800px" height="600px" src="https://ember-twiddle.com/8b851bfc501712cb636675f23a12f690?openFiles=templates.components.gif-display.hbs%2Ctemplates.components.gif-submit.hbs">Example Failed to Load</iframe>
+          <embed src="media/component-patterns.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+        </section>
+        <section>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/8b851bfc501712cb636675f23a12f690?fileTreeShown=false&openFiles=templates.index.hbs%2C" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
         </section>
         <section data-background="http://i.giphy.com/3otPoOrOg3KTKs9AJi.gif">
           <h2>Data Morphing Components</h2>
           <p>Adding Decoration</p>
         </section>
+        <section>
+          <embed src="media/component-patterns-morphing.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+        </section>
+        <section>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/911c9559aa5b63074d34f4be5a044930?fileTreeShown=false&openFiles=templates.index.hbs%2C" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+        </section>
         <section data-background="http://i.giphy.com/fPMH6uZgXvXgY.gif">
           <h2>Block Components</h2>
           <p>Ultimate Flexibility</p>
+        </section>
+        <section>
+          <embed src="media/component-patterns-block.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+        </section>
+        <section>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/c293d005df04ac1310395af256c1fb21?openFiles=templates.index.hbs%2C" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
         </section>
         <section data-background="http://i.giphy.com/zcCGBRQshGdt6.gif">
           <h2>Coodinating Components</h2>
           <p>Easy Reuse</p>
         </section>
+        <section>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/31df0a84020c87029f7341a02cb97e6a?openFiles=templates.index.hbs%2Ctemplates.components.giphy-input.hbs" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+        </section>
         <section data-background="http://i.giphy.com/7rTUToVCLdTxu.gif">
-          <h2>Service Event Bus</h2>
-          <p>Communicating Across Complexity</p>
+          <h2 style="color:black;">Service Event Bus</h2>
+          <p style="color:black;">Communicating Across Complexity</p>
+        </section>
+        <section>
+          <embed src="media/component-patterns-service.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+        </section>
+        <section>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/2561195e7b693ea9abddb1e7fa0603b1?openFiles=templates.index.hbs%2Ctemplates.components.giphy-input.hbs" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
         </section>
       </div>
     </div>
