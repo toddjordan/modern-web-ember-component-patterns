@@ -27,22 +27,31 @@
 	<section>
           <h2>Ember Component Patterns</h2>
           <p>Todd Jordan</p>
-          <p>@tddjordan</p>
         </section>
 	<section>
           <h2>A Little About Me</h2>
           <div style="text-align:left;margin-left:100px;">
             <div class="fragment fade-right">
-              <img style="display:inline;position:relative;top:40px;" alt="Triangle Ember Meetup Tomster" height="100" src="http://emberjs.com/images/tomsters/raleigh.png"/>
+              <img style="display:inline;position:relative;top:40px;"
+                   alt="Triangle Ember Meetup Tomster"
+                   height="100"
+                   src="http://emberjs.com/images/tomsters/raleigh.png"/>
               <p style="display:inline;">Triangle Ember Meetup Organizer</p>
             </div>
             <div class="fragment fade-right">
-              <img style="display:inline;position:relative;top:40px;" alt="Ember Learn Team Tomster" height="100" src="http://emberjs.com/images/tomsters/teaching.png"/>
+              <img style="display:inline;position:relative;top:40px;"
+                   alt="Ember Learn Team Tomster"
+                   height="100"
+                   src="http://emberjs.com/images/tomsters/teaching.png"/>
               <p style="display:inline;">Ember Learn Team</p>
             </div>
             <div class="fragment fade-right">
-              <img style="display:inline;position:relative;top:40px;" alt="LTS Tomster" height="100" src="http://emberjs.com/images/tomsters/lts.png"/>
+              <img style="display:inline;position:relative;top:40px;"
+                   alt="LTS Tomster"
+                   height="100"
+                   src="http://emberjs.com/images/tomsters/lts.png"/>
               <p style="display:inline;">Senior Dev at Interactive Intelligence</p>
+              <p style="text-align:center;position:relative;bottom:-100px;"><a href="https://inin.com/careers">https://inin.com/careers</a></p>
             </div>
           </div>
         </section>
@@ -50,14 +59,16 @@
           <h2>A Little About Ember</h2>
           <p class="fragment">Commitment to Semver, "Stability without Stagnation"</p>
           <p class="fragment">Convention over Configuration</p>
-          <p class="fragment">Pre-Built Local Environment and Build Pipeline (node, tests, linting, es6)</p>
+          <p class="fragment">Pre-Built Local Environment and Build Pipeline <br>(node, tests, linting, es6)</p>
           <p class="fragment">Community Owned and Maintained</p>
         </section>
 	<section>
           <h2>A Little About This Talk</h2>
           <p class="fragment fade-in">Components are Everywhere</p>
+          <p class="fragment fade-in">Lessons Forged in Fire</p>
+          <p class="fragment fade-in">Not Dogma, but understand your tradeoffs</p>
           <p class="fragment fade-in">Basic Component Mechanics of Ember</p>
-          <p class="fragment fade-in">Ideas for Designs</p>
+          <p class="fragment fade-in">Inspire some ideas, thoughts</p>
         </section>
         <section>
           <h2>Basics of an Ember Component</h2>
@@ -68,47 +79,138 @@
           <p>Ember's sweetspot</p>
         </section>
         <section>
-          <embed src="media/component-patterns.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+          <video src="media/component-patterns.m4v" width="800" height="600" controls></video>
         </section>
         <section>
-          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/8b851bfc501712cb636675f23a12f690?fileTreeShown=false&openFiles=templates.index.hbs%2C" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;">
+            <iframe src="https://ember-twiddle.com/8b851bfc501712cb636675f23a12f690?fileTreeShown=false&openFiles=templates.index.hbs%2C"
+                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">    
+            </iframe>
+          </div>
+        </section>
+        <section>
+          <h2>Tradeoff</h2>
+          <p>Predictable vs. In Control</p>
         </section>
         <section data-background="http://i.giphy.com/3otPoOrOg3KTKs9AJi.gif">
-          <h2>Data Morphing Components</h2>
+          <h2>Data Morphing "Tagless" Components</h2>
           <p>Adding Decoration</p>
         </section>
         <section>
-          <embed src="media/component-patterns-morphing.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+          <img alt="" src="media/morphing-component-basics.png" width="800"/>
         </section>
         <section>
-          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/911c9559aa5b63074d34f4be5a044930?fileTreeShown=false&openFiles=templates.index.hbs%2C" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+          <video src="media/component-patterns-morphing.m4v" width="800" height="600" controls></video>
+        </section>
+        <section>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;">
+            <iframe src="https://ember-twiddle.com/911c9559aa5b63074d34f4be5a044930?fileTreeShown=false&openFiles=templates.components.giphy-ping.hbs%2C"
+                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">              
+            </iframe>
+          </div>
+        </section>
+        <section>
+          <h2>Tradeoff</h2>
+          <p>Simple vs Declarative</p>
+          <p>Alternative: Handlebars Helpers</p>
         </section>
         <section data-background="http://i.giphy.com/fPMH6uZgXvXgY.gif">
           <h2>Block Components</h2>
           <p>Ultimate Flexibility</p>
         </section>
         <section>
-          <embed src="media/component-patterns-block.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+          <video src="media/component-patterns-block.m4v" width="800" height="600" controls></video>
         </section>
         <section>
-          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/c293d005df04ac1310395af256c1fb21?openFiles=templates.index.hbs%2C" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;">
+            <iframe src="https://ember-twiddle.com/c293d005df04ac1310395af256c1fb21?openFiles=templates.index.hbs%2C"
+                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">              
+            </iframe>
+          </div>
+        </section>
+        <section>
+          <h2>Tradeoff</h2>
+          <p>Customization vs Easy Defaults</p>
         </section>
         <section data-background="http://i.giphy.com/zcCGBRQshGdt6.gif">
           <h2>Coodinating Components</h2>
           <p>Easy Reuse</p>
         </section>
         <section>
-          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/31df0a84020c87029f7341a02cb97e6a?openFiles=templates.index.hbs%2Ctemplates.components.giphy-input.hbs" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+          <video src="media/component-patters-coordinating.m4v" width="800" height="600" controls></video>
+        </section>
+        <section>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;">
+            <iframe src="https://ember-twiddle.com/31df0a84020c87029f7341a02cb97e6a?openFiles=templates.index.hbs%2Ctemplates.components.giphy-input.hbs"
+                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">              
+            </iframe>
+          </div>
+        </section>
+        <section>
+          <h2>Tradeoff</h2>
+          <p>Ease of Use vs Power Over State</p>
         </section>
         <section data-background="http://i.giphy.com/7rTUToVCLdTxu.gif">
           <h2 style="color:black;">Service Event Bus</h2>
           <p style="color:black;">Communicating Across Complexity</p>
         </section>
         <section>
-          <embed src="media/component-patterns-service.m4v" width="800" height="600" autoplay="false" CONTROLLER="true" LOOP="false" PLUGINSPAGE="http://www.apple.com/quicktime/"/>
+          <video src="media/component-patterns-service.m4v" width="800" height="600" controls></video>
         </section>
         <section>
-          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;"><iframe src="https://ember-twiddle.com/2561195e7b693ea9abddb1e7fa0603b1?openFiles=templates.index.hbs%2Ctemplates.components.giphy-input.hbs" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+          <div style="position: relative; height: 0px; overflow: hidden; max-width: 100%; padding-bottom: 56.25%;">
+            <iframe src="https://ember-twiddle.com/2561195e7b693ea9abddb1e7fa0603b1?openFiles=templates.index.hbs%2Ctemplates.components.giphy-input.hbs"
+                    style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;">              
+            </iframe>
+          </div>
+        </section>
+        <section>
+          <h2>Tradeoff</h2>
+          <p>Predictable Data Flow vs. Data Flow Complexity</p>
+        </section>
+        <section data-background="http://i.giphy.com/l0HlxgojaVTyM7dNC.gif">
+          <h2>Anti-Patterns</h2>
+        </section>
+        <section data-background="http://i.giphy.com/10ffzi4D1dMyas.gif">
+          <h2>Giants</h2>
+        </section>
+        <section>
+          <h2>Antidote</h2>
+          <p>Sub-Components - Create building blocks</p>
+          <p>Single Responsibility</p>
+        </section>
+        <section data-background="http://i.giphy.com/BT4ygwV9vgwAU.gif">
+          <h2>JQuery as a hammer</h2>
+        </section>
+        <section>
+          <h2>Antidote</h2>
+          <p>Promises</p>
+          <p>ember-concurrency (generators!)</p>
+        </section>
+        <section data-background="http://i.giphy.com/3o6ZsXyFyrS0Ke5StG.gif">
+          <h2>Coupling to App Implementation</h2>
+        </section>
+        <section>
+          <h2>Antidote</h2>
+          <p>Adhere to DDAU</p>
+          <p>Treat Services like data</p>
+        </section>
+        <section data-background="http://i.giphy.com/K3CfSDulPrW1y.gif">
+          <h2>Service Mayham</h2>
+        </section>
+        <section>
+          <h2>Antidote</h2>
+          <p>Limit service injection to top level or coordinating components</p>
+          <p>Avoid Circular Service Dependencies</p>
+          <p>Adhere to good programming principles</p>
+          <p>Use Ember Data for persistence when you can</p>
+        </section>
+        <section>
+          <h2>Thanks!!!</h2>
+          <p>Twitter: @tddjordan</p>
+          <p>Github: toddjordan</p>
+          <p>Slack(Ember, Triangle): todd.jordan</p>
+          <p>https://www.meetup.com/Triangle-Ember/</p>
         </section>
       </div>
     </div>
